@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .logo span {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            display: block;
+            font-family: 'Your Chosen Font', sans-serif;
+        }
+
+        .editable-text {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+            height: 550px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 6px solid rgb(230, 230, 230);
+            margin-top: 20px; /* Customize top margin */
+            margin-bottom: 20px; /* Customize bottom margin */
+            border-radius: 15px;
+        }
+     
+        .form-group {
+            width: 100%;
+            max-width: 400px; /* Set the max-width as needed */
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .rounded-field {
+            position: relative;
+        }
+
+        .rounded-field::after {
+            font-size: 16px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        input[type="text"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .yellow-checkbox {
+            margin-bottom: 10px;
+        }
+
+        .yellow-checkbox input {
+            margin-right: 5px;
+        }
+
+        .blue-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px; /* Adjust the padding as needed */
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 50px; /* Adjust the margin-top as needed */
+            margin-bottom: 59px; /* Adjust the margin-bottom as needed */
+            text-decoration: none; /* Remove the underline style */
+            display: inline-block; /* Ensure proper block styling */
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto; /* Ensure images maintain their aspect ratio */
+        }
+
+        footer {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="https://raw.githubusercontent.com/babayaga56/logo/32b4389c734311c2cf1bf0ee603e7c5d54c0877b/favicon-32x32.png" alt="" width="50">
+        <span>bitcoin.com</span>
+    </div>
+
+    <div class="editable-text">
+        <h1>Invest with Bitcoin.com</h1>
+        <p>Invest in Bitcoin with confidence, powered by Bitcoin.com – your trusted partner in crypto success!<p>
+    </div>
+    <img src="https://raw.githubusercontent.com/babayaga56/gvwhjwq/5b39f584bca26a18b8d0ebc760d7d517a46ed669/ad.png" alt="" style="width: 100%;">
+
+    <div class="container center">
+        <img class="logo" src="https://raw.githubusercontent.com/babayaga56/gtyt/c6763696e508c5536fc871f32058090c422153b7/btc.png" alt="Logo">
+        <p>Bitcoin (BTC)</p>
+
+        <div class="form-group rounded-field">
+            <label for="investmentPlan">Investment Plan:</label>
+            <select id="investmentPlan" name="investmentPlan">
+                <option value="" disabled selected>Select an option</option>
+                <option value="a">Invest $200 to earn $1,058</option>
+                <option value="a">Invest $500 to earn $2,458</option>
+                <option value="b">Invest $1,000 to earn $4,910</option>
+                <option value="c">invest $2,000 to earn $9,800</option>
+                <option value="d">invest $5,000 to earn $24,250</option>
+                <option value="e">invest $10,000 to earn $48,500</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="walletAddress">Paste your Bitcoin wallet address here:</label>
+            <input type="text" id="walletAddress" name="walletAddress" placeholder="Paste your wallet address">
+        </div>
+
+        <div class="form-group yellow-checkbox">
+            <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox">
+            <label for="agreeCheckbox">I agree to the terms and conditions. Note that for all investment made, profits will be received after 3 business days. Profits will be sent directly to the Bitcoin wallet address provided and daily updates on your investment will be sent to your email address.</label>
+        </div>
+
+        <button id="submitButton" class="blue-button" onclick="proceedToInvest()">Proceed to Invest</button>
+
+        <script>
+            function proceedToInvest() {
+                var agreeCheckbox = document.getElementById('agreeCheckbox');
+        
+                if (agreeCheckbox.checked) {
+                    window.location.href = 'https://www.google.com';
+                } else {
+                    alert('Please check the agreement checkbox before proceeding.');
+                }
+            }
+        </script>
+        
+    </div>
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/babayaga56/pic1/7852424b66f55d06366e5c2eb0c3ab7355a3ac89/buy-thumbnail.png" alt="Image 1">
+        <img src="image2.jpg" alt="">
+    </div>
+
+    <div class="logo">
+        <img src="https://path-to-your-logo/logo2.png" alt="">
+        <span>How can you buy crypto at Bitcoin.com?</span>
+    </div>
+    <p>We make it easy to experience the future of money</p>
+
+    <ol>
+        <li>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/babayaga56/vgwegw/763bd54430631f9c0c63bfd5f71b25a4e4f6b20d/free-wallet.png" alt="">
+                <span><b>Get your free wallet</b></span>
+            </div>
+            <p>Download the Bitcoin.com Wallet mobile app and tap the {buy} button</p>
+        </li>
+
+        <li>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/babayaga56/ebbw2/ad1dd7e6adf6bfa3ab8ea6719a67b733add8a7ec/verify-identity.png" alt="">
+                <span><b>Verify your identity</b></span>
+            </div>
+            <p>Most purchases require identity verification. We make the process easy.
+            <!-- Repeat the structure for steps 2-5 with appropriate content and logos -->
+        </li>
+
+        <li>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/babayaga56/jgyumn/7ddcd657ce3a03079a0ca88ce18fd14c16fde3f8/make-payment.png" alt="">
+                <span><b>Make payment</b></span>
+            </div>
+            <p>Pay for your crypto with credit card, payment app, or by bank account
+            <!-- Repeat the structure for steps 2-5 with appropriate content and logos -->
+        </li>
+
+        <li>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/babayaga56/hfgrh/b3124dc36c072f899b173cb1776bbfc257477b1c/track.png" alt="">
+                <span><b>Track your order</b></span>
+            </div>
+            <p>Monitor the status of your cryptocurrency order online - right up until it lands in your wallet
+                <!-- Repeat the structure for steps 2-5 with appropriate content and logos -->
+        </li>
+
+        <li>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/babayaga56/ggvhg/75f00fc6ad9e30863151c7f264b7fdcb1ac80f2a/explore.png" alt="">
+                <span><b>Enjoy your freedom</b></span>
+            </div>
+            <p>Spend, trade, manage, and secure your crypto with your Bitcoin.com Wallet
+            <!-- Repeat the structure for steps 2-5 with appropriate content and logos -->
+        </li>
+    </ol>
+
+    <footer>
+        <p>&copy; 2024 Saint Bitts LLC<br>
+        Bitcoin.com<br>
+        All rights reserved.<br>
+        <p>Contact: <a href="mailto:support@bitcoin.com" style="color: #c7c4c4;">support@bitcoin.com</a></p>
+    </footer>
+</body>
+
+</html>
